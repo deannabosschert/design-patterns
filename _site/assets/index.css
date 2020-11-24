@@ -414,10 +414,13 @@ header section a {
   font-size: 1rem;
 }
 
+.quote {
+  border-left: 2.5px solid #fc8ec5;
+}
+
 header .quote {
   margin-top: -3.2rem;
   margin-bottom: 1rem;
-  border-left: 2.5px solid #fc8ec5;
 }
 
 .quote p {
@@ -429,10 +432,6 @@ header .quote {
   font-size: 0.55rem;
   font-weight: 300;
   text-align: right;
-}
-
-main .quote blockquote {
-  border-left: 2.5px solid #8e8efc;
 }
 
 article p {
@@ -503,7 +502,7 @@ h2 {
   bottom: 0;
   right: 30px;
   background: black;
-  color: #8efcfc;
+  color: white;
   padding: 0.3rem 0.6rem;
   border-radius: 5px 5px 0 0;
 }

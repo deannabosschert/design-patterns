@@ -211,10 +211,13 @@ header section a {
   font-size: $p;
 }
 
+.quote {
+  border-left: 2.5px solid $sweetpink;
+
+}
 header .quote {
   margin-top: -3.2rem;
   margin-bottom: 1rem;
-  border-left: 2.5px solid $sweetpink;
 }
 
 .quote p {
@@ -226,10 +229,6 @@ header .quote {
   font-size: $figcaption;
   font-weight: 300;
   text-align: right;
-}
-
-main .quote blockquote {
-  border-left: 2.5px solid $purple;
 }
 
 article p {
@@ -326,7 +325,7 @@ p {}
   bottom: 0;
   right: 30px;
   background: black;
-  color: $aqua;
+  color: white;
   padding: 0.3rem 0.6rem;
   border-radius: 5px 5px 0 0;
 }
