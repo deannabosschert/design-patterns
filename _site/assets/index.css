@@ -289,10 +289,11 @@ header section {
   padding-top: 2rem;
   padding-bottom: 4rem;
   background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-image: linear-gradient(62deg, #7fb1e2 0%, #c9afe2 100%);
   background-position: 8px left;
   background-size: cover;
   justify-content: center;
+  height: 11rem;
   padding-left: 10%;
 }
 
@@ -311,7 +312,7 @@ header section p {
   color: white;
   margin-bottom: 0.5rem;
   font-size: 1.6rem;
-  line-height: 1.55rem;
+  line-height: 1.75rem;
 }
 
 header section button {
@@ -369,29 +370,24 @@ main section {
 }
 
 article {
+  background-color: #fefefe;
   background-color: white;
   border-radius: 5px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 1rem;
+  max-width: 20rem;
 }
 
 article h3 {
-  writing-mode: vertical-rl;
-  text-orientation: sideways;
   text-align: center;
   background-color: #b582b5;
   color: white;
   padding: 0 0.5rem;
+  width: 100%;
   font-variant: small-caps;
   letter-spacing: 1.3px;
-}
-
-article:nth-child(odd) h3 {
-  transform: rotate(-180deg);
-}
-
-article:nth-child(even) {
-  flex-direction: row-reverse;
 }
 
 header section a {
@@ -402,7 +398,7 @@ header section a {
   top: 0;
   right: 30px;
   min-height: 20px;
-  padding: 0 1rem;
+  padding: 0.2rem 1rem;
 }
 
 .quote {
@@ -419,8 +415,8 @@ header section a {
 }
 
 header .quote {
-  margin-top: -3.2rem;
-  margin-bottom: 1rem;
+  margin-top: -3.8rem;
+  margin-bottom: 2rem;
 }
 
 .quote p {
@@ -437,7 +433,6 @@ header .quote {
 article p {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   padding: 1rem 2rem 1rem 1.5rem;
-  max-width: 15rem;
 }
 
 main section .video {
