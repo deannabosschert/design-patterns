@@ -130,6 +130,14 @@ header .quote {
   text-align: right;
 }
 
+header figure img {
+  position: absolute;
+  object-fit: contain;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
 main {
   max-width: 90%;
   margin: 0 5vw;
@@ -175,7 +183,6 @@ article p {
   padding: 1rem 2rem 1rem 1.5rem;
 }
 
-
 main section .video {
   position: relative;
   display: flex;
@@ -186,7 +193,6 @@ main section .video img {
   display: block;
   object-fit: contain;
 }
-
 // SMOL PARTS
 main section .video figcaption {
   position: absolute;
