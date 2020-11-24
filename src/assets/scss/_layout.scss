@@ -90,7 +90,6 @@ header nav ul li a {
   padding: 0.1rem 0.5rem;
 }
 
-
 header section a {
   background-color: $sweetpink;
   color: white;
@@ -155,33 +154,27 @@ article {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   margin: 1rem;
   max-width: 20rem;
 }
 
-article h3 {
+article h2 {
   text-align: center;
   background-color: $sweetpink;
   color: white;
-  padding: 0 0.5rem;
+  padding: 0.3rem 0.5rem;
   width: 100%;
   font-variant: small-caps;
   letter-spacing: 1.3px;
+  vertical-align: baseline;
 }
 
 article p {
   box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
-  // padding: 1rem 1.4rem 1rem 0;
   padding: 1rem 2rem 1rem 1.5rem;
-  // margin-bottom: 2rem;
-  // margin: 0.5rem 0;
-  // min-width: 10rem;
-  // max-width: 15rem;
 }
 
-main section div {
-  // max-height: 10rem;
-}
 
 main section .video {
   position: relative;
@@ -192,12 +185,9 @@ main section .video {
 main section .video img {
   display: block;
   object-fit: contain;
-  // width: 100%;
-  // height: auto;
-  // display: flex;
 }
-// SMOL PARTS
 
+// SMOL PARTS
 main section .video figcaption {
   position: absolute;
   left: 2.5%;
@@ -243,18 +233,6 @@ span {}
 blockquote {}
 
 img {}
-
-h2 {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  // text-decoration: underline;
-  // border-bottom: 1px solid red;
-  // border-bottom-width: thick;
-}
 
 p {}
 
