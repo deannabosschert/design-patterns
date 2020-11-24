@@ -114,7 +114,6 @@ h6 {
   line-height: $h6;
 }
 
-
 p {
   font-size: $p;
 }
@@ -126,6 +125,12 @@ a {
 
 button {
   font-size: $p;
+}
+
+nav ul li a {
+  font-size: $p;
+  line-height: 1;
+  text-align: center;
 }
 
 header section a {
