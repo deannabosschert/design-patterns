@@ -1,51 +1,52 @@
 // Sources for the fluid typography: https://codepen.io/MadeByMike/pen/bEEGvv?editors%3D0100 and https://www.smashingmagazine.com/2016/05/fluid-typography/
-/* Older browsers */
-html {
-  font-size: 16px;
-}
-/* Modern browsers only need this one */
-@media screen and (min-width: 25em) {
-  html {
-    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-/* Safari <8 and IE <11 */
-@media screen and (min-width: 25em) {
-  html {
-    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-@media screen and (min-width: 50em) {
-  html {
-    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
-  & {
-    @each $property in $properties {
-      #{$property}: $min-value;
-    }
-    @media screen and (min-width: $min-vw) {
-      @each $property in $properties {
-        #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-      }
-    }
-    @media screen and (min-width: $max-vw) {
-      @each $property in $properties {
-        #{$property}: $max-value;
-      }
-    }
-  }
-}
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
-}
+// /* Older browsers */
+// html {
+//   font-size: 16px;
+// }
+//
+// /* Modern browsers only need this one */
+// @media screen and (min-width: 25em) {
+//   html {
+//     font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+//   }
+// }
+// /* Safari <8 and IE <11 */
+// @media screen and (min-width: 25em) {
+//   html {
+//     font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+//   }
+// }
+// @media screen and (min-width: 50em) {
+//   html {
+//     font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+//   }
+// }
+// @mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+//   & {
+//     @each $property in $properties {
+//       #{$property}: $min-value;
+//     }
+//     @media screen and (min-width: $min-vw) {
+//       @each $property in $properties {
+//         #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+//       }
+//     }
+//     @media screen and (min-width: $max-vw) {
+//       @each $property in $properties {
+//         #{$property}: $max-value;
+//       }
+//     }
+//   }
+// }
+// @function strip-unit($value) {
+//   @return $value / ($value * 0 + 1);
+// }
 
 html {
-  height: 100%;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  @include fluid-type(font-size, $minScreen, $maxScreen, $minFont, $maxFont);
+  // height: 100%;
+  // font-smoothing: antialiased;
+  // text-rendering: optimizeLegibility;
+  // @include fluid-type(font-size, $minScreen, $maxScreen, $minFont, $maxFont);
 }
 
 body {
@@ -54,7 +55,7 @@ body {
 }
 
 p {
-  line-height: $baseline;
+  line-height: 1.4;
   // margin-bottom: $baseline;
 }
 
@@ -72,15 +73,11 @@ h2 {
   // text-align: center;
 }
 
-
-// label: height/width van de parent
-// Avenir Light, Avenir Book, Avenir Roman, Avenir Medium, Avenir Heavy, Avenir Black
-
 html {
   font-family: Avenir;
 }
 
-h1, h2, h3, h4, .year {
+h1, h2 {
   font-family: Avenir Black;
 }
 
@@ -128,7 +125,7 @@ button {
 }
 
 nav ul li a {
-  font-size: $p;
+  font-size: $h3;
   line-height: 1;
   text-align: center;
 }
@@ -140,4 +137,10 @@ header section a {
 
 header section a span {
   color: black;
+}
+
+ figcaption {
+  font-size: $figcaption;
+  font-weight: 300;
+  text-align: right;
 }
