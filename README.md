@@ -8,6 +8,7 @@ Present a Multi-Device Design in a screenflow.
 
 <details> <summary>Iteration 1</summary>
    Low effort bc got distracted by goofing around with code
+  
   ![version 1 screenshots](https://github.com/deannabosschert/design-patterns/blob/main/src/assets/img/assignments/version_1.jpg)
   
 </details>
