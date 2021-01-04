@@ -30,3 +30,16 @@ Present a Multi-Device Design in a screenflow.
   ![job stories screenshot version 2](https://github.com/deannabosschert/design-patterns/blob/main/src/assets/img/assignments/job_stories_v2.jpg)
 
 
+
+
+
+## Installation
+` npm install` ==> install my added packages
+
+### Compiles and hot-reloads for development
+` npm run dev ` ==> during development, complile and reload app && scss
+
+### Compiles and minifies for production
+`npm run build` ==> put build in /dist, optimalized for production
+
+
