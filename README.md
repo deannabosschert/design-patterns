@@ -29,6 +29,8 @@ Present a Multi-Device Design in a screenflow.
 #### Version 2
   ![job stories screenshot version 2](https://github.com/deannabosschert/design-patterns/blob/main/src/assets/img/assignments/job_stories_v2.jpg)
 
+### Screenflows
+   ![screenflows screenshot](https://github.com/deannabosschert/design-patterns/blob/main/src/assets/img/assignments/assignment_2a_screenflows.jpg)
 
 
 
